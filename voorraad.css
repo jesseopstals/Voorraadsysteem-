@@ -65,7 +65,21 @@ p#dish-name {
 }
 
 .side-product{
-    height: 60%
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#hoeveelheid{
+    /* width: 68%; */
+    /* display: flex; */
+    /* margin: auto; */
+}
+
+#totaal-prijs{
+    width: 68%;
+    display: flex;
+    /* margin: auto; */
 }
 
 
@@ -125,4 +139,14 @@ p#searchbar-text {
     display: flex;
     font-size: 18px;
     justify-content: space-around;
+}
+
+.stock-item:focus {
+    color:blue;
+    background-color:#d4d4d4;
+}
+
+.dish-list{
+    overflow-y: scroll;
+    height: 86%;
 }
