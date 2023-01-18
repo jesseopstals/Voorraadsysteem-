@@ -142,7 +142,8 @@ p#searchbar-text {
 }
 
 .stock-item:focus {
-    color:blue
+    color:blue;
+    background-color:#d4d4d4;
 }
 
 .dish-list{
