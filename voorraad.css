@@ -11,7 +11,7 @@ body{
 }
 
 .nav {
-    box-shadow: 3px 1px 0px 0px;
+    box-shadow: 2px 1px 0px 0px;
     height: 8%;
     display: flex;
 }
@@ -40,7 +40,7 @@ p#sub-title{
 .side-info {
     width: 23%;
     height: 100%;
-    box-shadow: 3px 0px 0px 0px;
+    box-shadow: 2px 0px 0px 0px;
 }
 
 p#dish-name {
@@ -143,11 +143,11 @@ p#searchbar-text {
     width: 100%;
     height: 10%;
     background-color: white;
-    margin: -1px 0;
+    margin: 10px 0;
     display: flex;
     font-size: 18px;
     justify-content: space-around;
-    border-bottom: none;
+    /* border-bottom: none; */
 }
 
 .stock-item:focus {
