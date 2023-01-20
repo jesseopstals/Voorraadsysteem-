@@ -11,7 +11,7 @@ body{
 }
 
 .nav {
-    box-shadow: 3px 1px 0px 0px;
+    box-shadow: 2px 1px 0px 0px;
     height: 8%;
     display: flex;
 }
@@ -40,7 +40,7 @@ p#sub-title{
 .side-info {
     width: 23%;
     height: 100%;
-    box-shadow: 3px 0px 0px 0px;
+    box-shadow: 2px 0px 0px 0px;
 }
 
 p#dish-name {
@@ -65,21 +65,29 @@ p#dish-name {
 }
 
 .side-product{
-    height: 65%;
+    width: 23%;
+    height: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
 }
 
 #hoeveelheid{
-    /* width: 68%; */
-    /* display: flex; */
-    /* margin: auto; */
+    width: 68%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 24px;
 }
 
 #totaal-prijs{
     width: 68%;
     display: flex;
-    /* margin: auto; */
+    margin: 0 auto;
+    font-size: 24px;
 }
 
 
@@ -135,18 +143,38 @@ p#searchbar-text {
     width: 100%;
     height: 10%;
     background-color: white;
-    margin: 1px 0;
+    margin: 10px 0;
     display: flex;
     font-size: 18px;
     justify-content: space-around;
+    /* border-bottom: none; */
 }
 
 .stock-item:focus {
-    color:blue;
+    border-color:blue;
     background-color:#d4d4d4;
+    
 }
 
 .dish-list{
     overflow-y: scroll;
     height: 86%;
+}
+
+
+#edit-dish{
+    margin: auto;
+    margin-bottom: 0;
+    width: 70%;
+    height: 6%;
+}
+
+#edit-stock {
+    width: 20%;
+    margin-left: 44px;
+}
+
+#edit-price{
+    width: 20%;
+    margin-left: 62px;
 }
