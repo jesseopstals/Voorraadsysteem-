@@ -1,5 +1,5 @@
-let dishlist = document.querySelector('.dishlist');
-let stockitem = document.querySelector('.stockitem');
+let stocklist = document.querySelector('.stocklist');
+// let stockitem = document.querySelector('.stockitem');
 
 document.querySelector("#typebar");
 addEventListener("input", filterlist);
@@ -20,30 +20,30 @@ function filterlist(){
     });
 }
 
-function displayDishes(type) {
+function displayDishes() {
     $.ajax({
         type: "GET",
-        url: `https://localhost:7269/api/Dish/dishtype/${type}`,
+        url: `https://localhost:7269/api/Dish`,
         encode: false,
-    }).done(function (data) {
+    }).done(function (data) { 
         loadDishHTML(data)
     });
 }
 
-function loadDishHTML(data) {
-    dishlist.innerHTML = "";
-    for (let x = 0; x < data.length; x++) {
-        let dish = data[x]
+displayDishes()
+function loadDishHTML(data) {  
+   for (let x = 0; x < data.length; x++) {
+       let dish = data[x]
+      
+       let stockItem = document.createElement('li');
+       stockItem.className = "stockitem";
+       stockItem.innerHTML = `
+           <p class="stock-name">${dish.name}</p>
+           <p class="stock-amount">0</p>
+           <p class="stock-date">13/2/2022</p>`   
+    stocklist.appendChild(stockItem);
+   }}
+ 
 
-        let stocklist = document.createElement('li');
-        stocklist.className = "stockitem";
-        stocklist.innerHTML = `
-        <button class="stockitem">
-            <p class="stock-name">${dish.name}</p>
-            <p class="stock-amount">${dish.stockAmount}</p>
-            <p class="stock-date"></p>
-        </button>`
-    }}
 
-    let stocklist = document.createElement('li');
-    dishlist.appendChild(stocklist);
+  
