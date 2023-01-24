@@ -50,19 +50,21 @@ p#dish-name {
     font-family: sans-serif;
     padding: 4px;
 }
-
-
+.side-Image{
+    height: 35%;
+}
 
 .dish-img{
     background-image: url(crema-catalana.webp);
     width: 70%;
-    height: 24%;
+    height: 80%;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     margin: auto;
     margin-top: 1px;
 }
+
 
 .side-product{
     width: 23%;
