@@ -38,6 +38,7 @@ function loadDishHTML(data) {
        let stockItem = document.createElement('li');
        stockItem.className = "stockitem";
        stockItem.innerHTML = `
+           <p class="stock-id">43</p>
            <p class="stock-name">${dish.name}</p>
            <p class="stock-amount">0</p>
            <p class="stock-date">13/2/2022</p>`   

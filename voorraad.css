@@ -142,20 +142,22 @@ p#searchbar-text {
 .stockitem{
     width: 100%;
     height: 10%;
-    background-color: white;
     margin: 10px 0;
     display: flex;
     font-size: 18px;
     justify-content: space-around;
 }
 
-.stockitem:focus {
+/* .stockitem:focus {
     border-color:blue;
-    background-color:#d4d4d4;
-    
+    background-color:#d4d4d4;  
+} */
+
+.stock-name{
+    width: 36%;
 }
 
-.dish-list{
+.stocklist{
     overflow-y: scroll;
     height: 86%;
 }
